@@ -1,11 +1,11 @@
-# iOS App template for CSML App Studio
+# RecycleThis
 
 **iOS Versions Supported:** iOS 12.0 and above.
 **Xcode Version Required:** 10.0 and above
 
 ## Overview
 
-This is a iOS App template for [CSML App Studio](https://sites.google.com/ucsc.edu/csmlappstudio/detection). This app is created based on the [TensorFlow Lite object detection iOS example app](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/ios). However, a lot of original work is done on the base app. The detects the objects (bounding boxes and classes) in the frames seen by your device's back camera, using a quantized [MobileNet SSD](https://github.com/tensorflow/models/tree/master/research/object_detection) model trained on your custom dataset using the CSML App Studio. These instructions walk you through building and running the app on an iOS device.
+RecycleThis is an iOS app for detetcing 5 types of recycleable object using machine learning. The app was created using the iOS template for [CSML App Studio](https://sites.google.com/ucsc.edu/csmlappstudio/detection). The original template was created based on the [TensorFlow Lite object detection iOS example app](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/ios). However, a lot of original work is done on the base app. The detects the objects (bounding boxes and classes) in the frames seen by your device's (default) back camera, using a quantized [MobileNet SSD](https://github.com/tensorflow/models/tree/master/research/object_detection) model trained on your custom dataset using the CSML App Studio. These instructions walk you through building and running the app on an iOS device.
 
 ## Prerequisites
 
@@ -53,3 +53,9 @@ The python script will autometically replace the icons and logos with your image
 
 8. Replace the links in the **MenuViewController** to update the urls to the file upload webpage (line 29) and help webpage (line 39). Rebuild the app to apply the changes to your app.
 ![alt text](urls.png?raw=true)
+
+## Paper
+
+If you use this code, please cite the following paper,
+
+C. Yeh and F. H. Khan, "Citizen Science Mobile Apps with Machine Learning for Recyclable Objects," 2022 International Conference on Computational Science and Computational Intelligence (CSCI), Las Vegas, NV, USA, 2022, pp. 1539-1542, doi: 10.1109/CSCI58124.2022.00273.
